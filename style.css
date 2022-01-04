@@ -308,7 +308,6 @@ i {
   padding: 10px;
   object-fit: cover;
   margin: 5px;
-  height: 16px;
 }
 
 i:hover {
@@ -430,8 +429,19 @@ button:hover {
   justify-content: end;
   flex-wrap: wrap;
 }
+.icons {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  width: 230px;
+  height: 100px;
+}
 .footer-pt2 h3 {
-  padding-left: 5px;
+  width: 184px;
+  padding-bottom: 10px;
+}
+#facebook {
+  padding: 10px 13px;
 }
 
 /* ---------------------------------------mobile view------------------------------------------------------ */
@@ -472,7 +482,19 @@ button:hover {
   footer {
     flex-direction: column-reverse;
   }
-
+  #facebook {
+    padding: 10px 17px;
+  }
+  .footer-pt2 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .icons {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
   button {
     width: 400px;
   }
@@ -483,7 +505,36 @@ button:hover {
   button {
     transition: 0.3s;
   }
+  input:nth-of-type(1) {
+    width: 400px;
+  }
+  input:nth-of-type(2) {
+    width: 400px;
+  }
+
+  input:nth-of-type(3) {
+    width: 400px;
+  }
+  .footer-pt2 {
+    display: flex;
+    width: 400px;
+    height: 130px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer-pt2 h3 {
+    width: 400px;
+    padding-bottom: 10px;
+  }
+  i {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 15px;
+    object-fit: cover;
+    margin: 7px;
+  }
 }
+
 /* -----------------------------------------tablet view---------------------------------- */
 @media (min-width: 671px) and (max-width: 900px) {
   .main {
